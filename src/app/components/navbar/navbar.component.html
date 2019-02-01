@@ -1,20 +1,38 @@
 <nav class="navbar navbar-static-top navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Always expand</a>
+      <a class="navbar-brand" href="#">Finvo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample02">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto navbar-left">
           <li class="nav-item active">
             <a class="nav-link" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/budget']">My Budget</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/addbudget']">Add Budget</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/editbudget']">Edit Budget</a>
+          </li>
+          <li class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tools
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="nav-link" [routerLink]="['/addbudget']">Add Budget</a>
+              <a class="nav-link" [routerLink]="['/addbudget']">Add Budget</a>
+            </div>
+          </li>
+
         </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" type="text" placeholder="Search">
-        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Login<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
       </div>
     </nav>

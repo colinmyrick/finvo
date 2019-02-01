@@ -19,7 +19,14 @@ const routes: Routes = [
     path:'navbar',
     component:NavbarComponent
   },
-  
+  {
+    path:'editbudget',
+    component:EditbudgetComponent
+  },
+  {
+    path:'addbudget',
+    component:AddbudgetComponent
+  }
 ];
 
 @NgModule({
