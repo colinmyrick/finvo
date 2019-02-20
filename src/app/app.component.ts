@@ -29,9 +29,7 @@ import { Observable } from 'rxjs/Observable';
 
 export class AppComponent {
   constructor(private afs: AngularFirestore) {
-    this.budgetsCollectionRef = this.afs.collection<Budget>('budgets');
-    this.budgets = this.budgetsCollectionRef.valueChanges();
-    return this.budgets;
+    
   }
 
 }

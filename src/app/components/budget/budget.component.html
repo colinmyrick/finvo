@@ -1,0 +1,274 @@
+<div class ="container">
+  <div class="jumbotron jumbotron-fluid vertical-center">
+    <h1> Budget Calculator </h1>
+    <p> Directions: Enter the estimated amounts
+      in the following fields. Round to the nearest
+      dollar
+    </p>
+    </div>
+
+</div>
+<body>
+  <div class="container">
+    <h1 align="center">Income</h1>
+    <div id= "jumbotron-collumns" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3" align="center">
+          <p>Monthly Pay (Salary): </p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="monthlyPay" ><br>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Other (Gifts, Alimony, ect.) </p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="other" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <h1 align="center">Monthly Savings</h1>
+    <div id= "jumbotron-collumns" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3" align="center">
+          <p>Emergency Fund:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="emergencyFund" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Retirement (IRA, 401k, ect.):</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="retirement" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Other Savings/Investments:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="investments" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <h1 align="center">Monthly Expenses</h1>
+    <div id= "jumbotron-collumns" class="jumbotron">
+      <div class="row">
+        <div class="col-sm-3" align="center">
+          <p>Housing (Mortgage, Rent, Taxes, ect):</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="housing" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Utilities: </p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="utilities" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Food (Groceries, Dining Out, ect.):</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="food" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Transportation(Gas, Public Parking, ect.):</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="transportation" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Car Loan Payment:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="carPayment"><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Car Insurance:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="carInsurance" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Health Insurance:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="healthInsurance" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Clothing:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="clothing" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Other Loans/Payments (Student Loans, Credit Card, ect.):</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="otherLoans" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+
+        <div class="col-sm-3" align="center">
+          <p>Miscellaneous:</p>
+        </div>
+        <div class="col-md-6" align="center">
+          <input type="number" [(ngModel)]="miscellaneous" ><br>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+      </div>
+      <hr class="my-4">
+      <button (click)="handleClick($event)" type="button" class="block">Calculate!</button>
+    </div>
+
+    <div class="container">
+      <h1 align="center">Budget Review</h1>
+      <div id= "jumbotron-collumns" class="jumbotron">
+        <div class="row">
+          <div class="col-sm-3" align="center">
+            <p>Monthly Income:</p>
+          </div>
+          <div class="col-md-6" align="center">
+            <input class="form-control" type="number" placeholder='0' readonly>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+
+          <div class="col-sm-3" align="center">
+            <p>Monthly Expenses:</p>
+          </div>
+          <div class="col-md-6" align="center">
+            <input class="form-control" type="number" placeholder='0' readonly>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+
+          <div class="col-sm-3" align="center">
+            <p>Monthly Savings:</p>
+          </div>
+          <div class="col-md-6" align="center">
+            <input class="form-control" type="number" placeholder='0' readonly>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+
+          <div class="col-sm-3" align="center">
+            <p>Over/Under: </p>
+          </div>
+          <div class="col-md-6" align="center">
+            <input class="form-control" type="number" placeholder='0' readonly>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>

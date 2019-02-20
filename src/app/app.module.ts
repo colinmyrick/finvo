@@ -7,7 +7,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 //import {FirebaseService} from './services/firebase.service'
 
-
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -33,7 +33,8 @@ import { EditbudgetComponent } from './components/editbudget/editbudget.componen
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
