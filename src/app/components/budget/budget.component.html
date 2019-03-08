@@ -211,7 +211,7 @@
         </div>
       </div>
       <hr class="my-4">
-      <button (click)="handleClick($event)" type="button" class="block">Calculate!</button>
+      <button (click)="onClickMe()" type="button" class="block">Calculate!</button>
     </div>
 
     <div class="container">
@@ -222,7 +222,7 @@
             <p>Monthly Income:</p>
           </div>
           <div class="col-md-6" align="center">
-            <input class="form-control" type="number" placeholder='0' readonly>
+            <input class="form-control" type="number" [(ngModel)]="monthlyIncome" placeholder='0' readonly>
           </div>
           <div class="col-md-6">
 
@@ -235,7 +235,7 @@
             <p>Monthly Expenses:</p>
           </div>
           <div class="col-md-6" align="center">
-            <input class="form-control" type="number" placeholder='0' readonly>
+            <input class="form-control" type="number" [(ngModel)]="monthlyExpenses" placeholder='0' readonly>
           </div>
           <div class="col-md-6">
 
@@ -248,7 +248,7 @@
             <p>Monthly Savings:</p>
           </div>
           <div class="col-md-6" align="center">
-            <input class="form-control" type="number" placeholder='0' readonly>
+            <input class="form-control" type="number" [(ngModel)]="monthlySavings" placeholder='0' readonly>
           </div>
           <div class="col-md-6">
 
@@ -261,7 +261,7 @@
             <p>Over/Under: </p>
           </div>
           <div class="col-md-6" align="center">
-            <input class="form-control" type="number" placeholder='0' readonly>
+            <input class="form-control" type="number" [(ngModel)]="overUnder" placeholder='0' readonly>
           </div>
           <div class="col-md-6">
 
