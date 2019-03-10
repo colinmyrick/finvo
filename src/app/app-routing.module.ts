@@ -5,6 +5,7 @@ import { BudgetComponent } from './components/budget/budget.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AddbudgetComponent } from './components/addbudget/addbudget.component';
 import { EditbudgetComponent } from './components/editbudget/editbudget.component';
+import {InvestmentCalculatorComponent} from './components/investment-calculator/investment-calculator.component'
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path:'addbudget',
     component:AddbudgetComponent
+  },
+  {
+    path:'InvestmentCalculator',
+    component:InvestmentCalculatorComponent
   }
 ];
 

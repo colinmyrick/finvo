@@ -8,6 +8,7 @@
     </div>
 
 </div>
+
 <body>
   <div class="container">
     <h1 align="center">Income</h1>
@@ -272,3 +273,12 @@
     </div>
   </div>
 </body>
+<div class = "chart" *ngIf="doughnutChartData.length > 1" style="display: block">
+  <canvas baseChart
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [colors]="chartColors"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+</div>

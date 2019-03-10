@@ -3,6 +3,7 @@ import { AngularFirestore,
           AngularFirestoreCollection
 } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
+import {Chart} from 'chart.js'
 
 /*export interface Budget {
   $key?:string;
@@ -29,7 +30,7 @@ import { Observable } from 'rxjs/Observable';
 
 export class AppComponent {
   constructor(private afs: AngularFirestore) {
-    
+
   }
 
 }
